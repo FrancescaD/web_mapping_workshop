@@ -18,9 +18,9 @@ var featurelayer= L.mapbox.featurelayer().loadURL(dataFileToAdd).addTo(map);
 featurelayer.on('ready',function(){
   this.setStyle({
     'color':'#ec008c',
-    'fillColor': "#ec008c",
+    'fillColor': '#ec008c',
     'weight':4,
-    'opacity':.6
+    'opacity':.7
   });
   map.fitBounds(featureLayer.getBounds());
 });
