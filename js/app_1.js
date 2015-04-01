@@ -15,7 +15,7 @@ var dataFileToAdd = 'data/bike_routes.geojson';
 
 var featurelayer= L.mapbox.featurelayer().loadURL(dataFileToAdd).addTo(map);
 
-featurelayer.on('ready',function()){
+featurelayer.on('ready',function(){
   this.setstyle({
     'color':'#ec008c',
     'fillColor': "#ec008c",
