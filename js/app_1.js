@@ -24,3 +24,9 @@ featurelayer.on('ready',function(){
   });
   map.fitBounds(featureLayer.getBounds());
 });
+
+featureLayer.on('ready',function(){
+  this.eachLayer(function(layer){
+    layer.bindPopup('Hi. I am the park called ' + layer.feature.properties.NAME);
+  });
+});
